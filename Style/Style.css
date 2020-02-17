@@ -1,0 +1,182 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 25s ease infinite;
+}
+
+.container {
+    font-family: 'Overpass', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+#bandNameTextArea,
+#cityTextArea {
+    border-radius: 30px;
+    border: none;
+    padding-left: 2.5%;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+#titleRow {
+    text-align: center;
+    font-size: 8vw;
+    margin: 5%;
+}
+
+#lblBandSearch,
+#lblCitySearch,
+#txtBandSearch,
+#txtCitySearch,
+#searchBtn {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+#searchBar,
+#searchBtnRow {
+    margin-bottom: 5%;
+}
+
+#listrow {
+    justify-content: center;
+}
+
+#resultsRow {
+    padding-bottom: 30%;
+}
+
+.result {
+    margin-bottom: 25px;
+    -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    animation: slide-in-blurred-left 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+.resultLi {
+    list-style-type: none;
+    padding-bottom: 5%;
+    padding-top: 5%
+}
+
+.nameAndDate {
+    display: inline-block;
+}
+
+.tourName {
+    font-size: 1.6rem;
+}
+
+.tourDate {
+    font-size: 1rem;
+}
+
+.bandImage {
+    height: 90px;
+    width: 90px;
+}
+
+.buyLink {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.hr {
+    border-top: 3px solid rgba(34, 34, 34, 0.336);
+    border-radius: 25%;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #fdfdfd;
+    border: none;
+    color: rgb(114, 114, 114);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    color: rgb(75, 75, 75);
+    padding-right: 20px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+@-webkit-keyframes slide-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-blurred-left {
+    0% {
+        -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        -webkit-filter: blur(40px);
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+        transform: translateX(0) scaleY(1) scaleX(1);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
