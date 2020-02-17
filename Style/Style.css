@@ -5,26 +5,31 @@ body {
 }
 
 .container {
-    font-family: 'Overpass', sans-serif;
+    font-family: sans-serif;
     color: rgb(255, 255, 255);
-}
+    margin: 5%;
 
-#bandNameTextArea,
-#cityTextArea {
-    border-radius: 30px;
-    border: none;
-    padding-left: 2.5%;
-}
-
-::-webkit-input-placeholder {
-    text-align: center;
 }
 
 #titleRow {
     text-align: center;
-    font-size: 8vw;
-    margin: 5%;
+    font-size: 9vw;
 }
+
+#bandNameTextArea,
+#cityTextArea {
+    color: rgb(75, 75, 75);
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+    text-align: center;
+}
+
+::-webkit-input-placeholder,
+#resultsCol {
+    text-align: center;
+}
+
 
 #lblBandSearch,
 #lblCitySearch,
@@ -40,28 +45,17 @@ body {
     margin-bottom: 5%;
 }
 
-#listrow {
-    justify-content: center;
-}
-
 #resultsRow {
-    padding-bottom: 30%;
+    padding-bottom: 40%;
 }
 
 .result {
-    margin-bottom: 25px;
     -webkit-animation: slide-in-blurred-left 1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
     animation: slide-in-blurred-left 0.9s cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
 .resultLi {
     list-style-type: none;
-    padding-bottom: 5%;
-    padding-top: 5%
-}
-
-.nameAndDate {
-    display: inline-block;
 }
 
 .tourName {
@@ -75,6 +69,7 @@ body {
 .bandImage {
     height: 90px;
     width: 90px;
+    padding-right: 6px;
 }
 
 .buyLink {
@@ -88,7 +83,9 @@ body {
 }
 
 .button {
-    border-radius: 4px;
+    border-radius: 20px;
+    padding-left: 9px;
+    padding-right: 9px;
     background-color: #fdfdfd;
     border: none;
     color: rgb(114, 114, 114);

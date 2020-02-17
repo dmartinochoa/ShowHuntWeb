@@ -13,25 +13,24 @@
 
 <body>
     <div class="container">
-
         <div class="row" id="titleRow">
             <div class="col-12" id="titleCol">
-                <span class="pageTittle">ShowHunt</span>
+                <span class="pageTittle">Sh<!--<i class="fab fa-accessible-icon">--><i class="fas fa-crosshairs"></i></i></i>wHunt</span>
             </div>
         </div>
 
         <div class="row" id="searchBar">
-            <div class="col-12 col-md-3" id="lblBandSearch">
+            <div class="col-12" id="lblBandSearch">
                 <span id="lblBandName">Band Name: </span>
             </div>
-            <div class="col-12 col-md-3 " id="txtBandSearch">
+            <div class="col-12 " id="txtBandSearch">
                 <input type="text" placeholder="Enter Band Name" required="" id="bandNameTextArea"
                     onkeydown="enterSearch()">
             </div>
-            <div class="col-12 col-md-3" id="lblCitySearch">
+            <div class="col-12" id="lblCitySearch">
                 <span id="lblCityText">City: </span>
             </div>
-            <div class="col-12 col-md-3" id="txtCitySearch">
+            <div class="col-12" id="txtCitySearch">
                 <input type="text" placeholder="Optional City" id="cityTextArea" onkeydown="enterSearch()">
             </div>
         </div>
@@ -43,12 +42,14 @@
         </div>
 
         <div class="row" id="resultsRow">
-            <div class="col-12 col-md-12 col-xl-12" id="listCol">
+            <div class="col-12 col-md-12 col-xl-12" id="resultsCol">
+                <span id="counter"></span>
                 <ul id="results"></ul>
             </div>
         </div>
     </div>
 
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
