@@ -63,10 +63,10 @@ function addShow(response) {
                 resultsList.innerHTML += `
                  <li class="resultLi">
                      <div class="row">
-                        <div class="col-4 d-flex flex-wrap align-items-center">
+                        <div class="col-12 col-md-4 d-flex pipoEsUnBuenPerro">
                             <a href=${buyLink}> <img class="bandImage" src="${imageLink}" alt="Artis Image"></a>
                         </div>
-                        <div class="col-8 d-flex " id="resultinfo">
+                        <div class="col-12 col-md-8 d-flex resultInfo ">
                             <div class="showInfo">
                                 <div class="nameAndDate">
                                     <span class="tourName">${tourName}</span>
