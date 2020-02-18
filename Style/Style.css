@@ -45,14 +45,18 @@ body {
 }
 
 #results {
+    padding: 0;
     padding-bottom: 20%;
 }
-.resultInfo{
+
+.resultInfo {
     justify-content: center;
 }
-.pipoEsUnBuenPerro{
+
+.pipoEsUnBuenPerro {
     justify-content: center;
 }
+
 .resultLi {
     -webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
@@ -185,6 +189,4 @@ body {
     }
 }
 
-@media screen and (max-width: 576px){
-
-}
+@media screen and (max-width: 576px) {}

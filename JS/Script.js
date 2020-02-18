@@ -70,6 +70,7 @@ function addShow(response) {
                             <div class="showInfo">
                                 <div class="nameAndDate">
                                     <span class="tourName">${tourName}</span>
+                                    <br>
                                     <span class="tourDate">${tourDate}</span> 
                                 </div>
                             <div class="details">
