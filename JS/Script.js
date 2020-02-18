@@ -73,7 +73,7 @@ function addShow(response) {
                                     <span class="tourDate">${tourDate}</span> 
                                 </div>
                             <div class="details">
-                                <span class="tourTime">Starting: ${tourTime} - </span>
+                                <span class="tourTime">${tourTime} - </span>
                                 <span class="venue">${venue}</span>
                                 <br>
                                 <span class="showCity">${showCity}</span>
