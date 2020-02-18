@@ -66,7 +66,7 @@ function addShow(response) {
                         <div class="col-12 col-md-4 d-flex flex-wrap align-items-center pipoEsUnBuenPerro">
                             <a href=${buyLink}> <img class="bandImage" src="${imageLink}" alt="Artis Image"></a>
                         </div>
-                        <div class="col-12 col-md-8 d-flex resultInfo ">
+                        <div class="col-12 col-md-8 resultInfo ">
                             <div class="showInfo">
                                 <div class="nameAndDate">
                                     <span class="tourName">${tourName}</span>
