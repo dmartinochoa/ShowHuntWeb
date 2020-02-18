@@ -63,7 +63,7 @@ function addShow(response) {
                 resultsList.innerHTML += `
                  <li class="resultLi">
                      <div class="row">
-                        <div class="col-12 col-md-4 d-flex pipoEsUnBuenPerro">
+                        <div class="col-12 col-md-4 d-flex flex-wrap align-items-center pipoEsUnBuenPerro">
                             <a href=${buyLink}> <img class="bandImage" src="${imageLink}" alt="Artis Image"></a>
                         </div>
                         <div class="col-12 col-md-8 d-flex resultInfo ">
