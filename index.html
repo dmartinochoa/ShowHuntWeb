@@ -5,44 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ShowHunt</title>
+    <link rel="icon" href="img/logoWhiteMid.png">
     <link rel="stylesheet" href="Style/Style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="row" id="titleRow">
-            <div class="col-12" id="titleCol">
-                <span class="pageTittle">Sh<!--<i class="fab fa-accessible-icon">--><i class="fas fa-crosshairs"></i></i></i>wHunt</span>
+        <div class="row" >
+            <div class="col-12">
+                <span id="title">Sh<i class="fas fa-crosshairs"></i></i></i>wHunt</span>
             </div>
         </div>
 
         <div class="row" id="searchBar">
-            <div class="col-12" id="lblBandSearch">
-                <span id="lblBandName">Band Name: </span>
+            <div class="col-12" id="txtSearch">
+                <span>Artist Name:</span>
             </div>
-            <div class="col-12 " id="txtBandSearch">
-                <input type="text" placeholder="Enter Band Name" required="" id="bandNameTextArea"
-                    onkeydown="enterSearch()">
+            <div class="col-12 " id="txtSearch">
+                <input type="text" placeholder="Enter Artist Name" required="" id="bandNameTextArea"
+                    onkeydown="enterSearch()" oninput="btnEnabler()">
             </div>
-            <div class="col-12" id="lblCitySearch">
-                <span id="lblCityText">City: </span>
+            <div class="col-12" id="txtSearch">
+                <span>City:</span>
             </div>
-            <div class="col-12" id="txtCitySearch">
+            <div class="col-12" id="txtSearch">
                 <input type="text" placeholder="Optional City" id="cityTextArea" onkeydown="enterSearch()">
             </div>
-        </div>
-
-        <div class="row" id="searchBtnRow">
-            <div class="col-12 col-md-12 col-xl-12" id="searchBtn">
-                <button class="button" onclick="fetchData()"><span>Search</span></button>
+            <div class="col-12" id="txtSearch">
+                <span>Country:</span>
+            </div>
+            <div class="col-12" id="txtSearch">
+                <select id="country">
+                    <option value="es">Spain</option>
+                    <option value="ca">Canada</option>
+                    <option value="de">Germany</option>
+                    <option value="gb">Great Britain</option>
+                    <option value="us">United States</option>
+                  </select>
             </div>
         </div>
 
-        <div class="row" id="resultsRow">
-            <div class="col-12 col-md-12 col-xl-12" id="resultsCol">
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12">
+                <button class="buttondis" id="searchBtn" onclick="fetchData()" disabled><span>Search</span></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-xl-12">
                 <span id="counter"></span>
                 <ul id="results"></ul>
             </div>
