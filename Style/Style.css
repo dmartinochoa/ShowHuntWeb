@@ -13,7 +13,7 @@ body {
 }
 
 #title {
-    font-size: 50px;
+    font-size: 55px;
     white-space: nowrap;
 }
 
@@ -23,7 +23,7 @@ body {
     color: rgb(75, 75, 75);
     border-radius: 20px;
     border: none;
-    width: 250px;
+    width: 60%;
     text-align: center;
 }
 
@@ -41,8 +41,8 @@ body {
     font-size: 1.6rem;
 }
 
-#searchBtn {
-    margin: 3%;
+.txtSearch {
+    margin-bottom: 10px;
 }
 
 #results {
