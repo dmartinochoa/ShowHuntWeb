@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ShowHunt</title>
+    <link rel="icon" href="img/logoWhiteMid.png">
+    <link rel="stylesheet" href="Style/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <span id="title">Sh<i class="fas fa-crosshairs"></i>wHunt</span>
+            </div>
+        </div>
+        <div class="row" id="searchBar">
+            <div class="col-3 col-md-12 txtSearch">
+                <span>Artist:</span>
+            </div>
+            <div class="col-9 col-md-12 txtSearch">
+                <input type="text" required="" id="bandNameTextArea" onkeydown="enterSearch()" oninput="btnEnabler()">
+            </div>
+            <div class="col-3 col-md-12 txtSearch">
+                <span>City:</span>
+            </div>
+            <div class="col-9 col-md-12 txtSearch">
+                <input type="text" id="cityTextArea" onkeydown="enterSearch()">
+            </div>
+            <div class="col-3 col-md-12 txtSearch">
+                <span>Country:</span>
+            </div>
+            <div class="col-9 col-md-12 txtSearch">
+                <select id="country">
+                    <option value="es">Spain</option>
+                    <option value="ca">Canada</option>
+                    <option value="de">Germany</option>
+                    <option value="gb">Great Britain</option>
+                    <option value="us">United States</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <button class="buttondis" id="searchBtn" onclick="fetchData()" disabled><span>Search</span></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <span id="counter"></span>
+                <ul id="results"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="JS/Script.js"></script>
+</body>
+
+</html>
